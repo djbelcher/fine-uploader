@@ -18,7 +18,9 @@ qq.s3.SignatureAjaxRequestor = function(o) {
             method: "POST",
             signatureSpec: {
                 endpoint: null,
-                customHeaders: {}
+                customHeaders: {
+            		Accept: "application/json"
+            	}
             },
             maxConnections: 3,
             paramsStore: {},
