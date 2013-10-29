@@ -17,7 +17,9 @@ qq.s3.UploadSuccessAjaxRequester = function(o) {
             method: "POST",
             endpoint: null,
             maxConnections: 3,
-            customHeaders: {},
+            customHeaders: {
+    			Accept: "application/json"
+        	},
             paramsStore: {},
             cors: {
                 expected: false,
